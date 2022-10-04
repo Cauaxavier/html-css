@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adicionando conteúdos</title>
+    <style>
+        .mother {
+            width: 100%;
+            min-height: 320px;
+            height: 400px;
+        }
+
+        .responsivo {
+            min-width: 291px;
+            max-width: 500px;
+            height: 90%;
+            margin: auto;
+            position: relative;
+            padding: 10px 0px;
+        }
+
+        #inside {
+            min-width: 260px;
+            width: 90%;
+            top: 9%;
+            left: 5%;
+            background-color: white;
+            height: 315px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>conteúdos dentro de iframes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptate odio, obcaecati sunt quia ad ipsa eaque, eius in, suscipit nostrum aut cum perferendis laudantium dolor. Soluta voluptatibus expedita rerum.</p>
+    <h2>videos</h2>
+    <div class="mother">
+        <div class="responsivo">
+            <iframe id="inside" src="https://www.youtube.com/embed/SUbLqR9jTSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <h2>google maps</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.11581856055!2d-39.32335199999999!3d-7.2276286000000045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a18200fc6c5919%3A0x64eaa13b754da74!2sUnicardio%20Cariri!5e0!3m2!1spt-BR!2sbr!4v1664479193363!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>mapas do waze</h2>
+    <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-7.245345&lon=-39.301749&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+</body>
+</html>
